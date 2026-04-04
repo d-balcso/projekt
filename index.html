@@ -4,18 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Kvíz</title>
+    <title>One Piece Kvíz</title>
 </head>
 <body>
 
-    <h1>Kvíz</h1>
+    <h1>One Piece Kvíz</h1>
+
+    <form id="quizform">
     
-    <h2>Miről szól a One Piece?</h2>
-    <label for="tortenet">Történet: </label>
-    <input type="text" id="tortenet" name="tortenet">
+    <h3>1. Ki a főszereplő?</h3>
+    <input type="radio" name="elso" value="zoro"> Roronoa Zoro <br>
+    <input type="radio" name="elso" value="luffy"> Monkey D. Luffy <br>
+    <input type="radio" name="elso" value="ace"> Portas D. Ace <br>
+    <input type="radio" name="elso" value="law"> Trafalgar D. Law <br>
+    <div id="visszajelzes1"></div>
 
+    <h3>Mi a neve Luffy kalózcsapatának?</h3>
+    <input type="text" id="kalozcsapat" name="masodik" placeholder="Írd ide a választ!">
+    <div id="visszajelzes2"></div>
 
-    <h2></h2>
+    <h3>3. Ki a navigátor?</h3>
+    <input type="radio" name="q3" value="nami"> Nami<br>
+    <input type="radio" name="q3" value="robin"> Robin<br>
+    <div id="visszajelzes3"></div>
+
+    <h3>4. Ki a kalózkirály?</h3>
+    <input type="text" id="kalozkiraly" name="negyedik" placeholder="Írd ide a választ!">
+    <div id="visszajelzes4"></div>
+
+    <h3>5. Ki a zenész?</h3>
+    <input type="radio" name="ötödik" value="usopp"> Usopp <br>
+    <input type="radio" name="ötödik" value="sanji"> Sanji <br>
+    <input type="radio" name="ötödik" value="chopper"> Tony Tony Chopper <br>
+    <input type="radio" name="ötödik" value="brook"> Brook <br>
+    <div id="visszajelzes5"></div>
+
+    <h3>6. Ki a szakács?</h3>
+    <input type="radio" name="hatodik" value="sanji"> Sanji <br>
+    <input type="radio" name="hatodik" value="chopper"> Tony Tony Chopper <br>
+    <input type="radio" name="hatodik" value="usopp"> Usopp <br>
+    <input type="radio" name="hatodik" value="franky"> Franky <br>
+    <div id="visszajelzes6"></div>
+
+    <h3>7. Melyik Devil Fruit-ot használja Luffy?</h3>
+    <input type="text" id="devilfruit" name="hetedik" placeholder="Írd ide a választ!">
+    <div id="visszajelzes7"></div>
+
+    <h3>8. Kik a Yonkok tagjai?</h3>
+    <input type="checkbox" name="nyolcadik" value="shanks"> Shanks <br>
+    <input type="checkbox" name="nyolcadik" value="kaido"> Kaido <br>
+    <input type="checkbox" name="nyolcadik" value="garp"> Monkey D. Garp <br>
+    <input type="checkbox" name="nyolcadik" value="blackbeard"> Blackbeard <br>
+    <div id="visszajelzes8"></div>
+
+    <h3>9. Kik uralkodnak a világ felett?</h3>
+    <input type="radio" name="kilencedik" value="marines"> Marines <br>
+    <input type="radio" name="kilencedik" value="worldgovernment"> World Government <br>
+    <input type="radio" name="kilencedik" value="revolutionaries"> Revolutionaries <br>
+    <input type="radio" name="kilencedik" value="yonko"> Yonkos <br>
+    <div id="visszajelzes9"></div>
+
+    <h3>10. Ki a vezetőjük?</h3>
+    <input type="radio" name="tizedik" value="dragon"> Monkey D. Dragon <br>
+    <input type="radio" name="tizedik" value="akainu"> Akainu <br>
+    <input type="radio" name="tizedik" value="sengoku"> Sengoku <br>
+    <input type="radio" name="tizedik" value="imu"> Imu <br>
+    <div id="visszajelzes10"></div>
+
+    <button type="button" onclick="checkQuiz()">Eredmények</button>
 
     <script src="kviz.js"></script>
 </body>
