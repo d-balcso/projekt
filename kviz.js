@@ -121,4 +121,12 @@ function checkQuiz() {
     }
 
     eredmenyElem.innerText = "Pontszám: " + score + "/10";
+
+    if (score === 10) {
+        setTimeout(() => {
+    window.location.href = "absoluteOP.html";
+    }, 2000);
+    }
 }
+
+

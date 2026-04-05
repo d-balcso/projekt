@@ -4,12 +4,11 @@ body{
     color: white;
     margin: 0;
     padding: 20px;
-    background-color: #2B2A4A;
+    background-image: url(sunny.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-
-
-
 
 h1{
     text-align: center;
