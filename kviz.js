@@ -6,10 +6,10 @@ function checkQuiz() {
         let elem = document.getElementById(id);
 
         if (helyes) {
-            elem.innerHTML = "✔ Helyes válasz!";
+            elem.innerHTML = "Helyes válasz!";
             elem.style.color = "green";
         } else {
-            elem.innerHTML = "✘ Helytelen! Helyes: " + helyesValasz;
+            elem.innerHTML = "Helytelen! Helyes: " + helyesValasz;
             elem.style.color = "red";
         }
     }
