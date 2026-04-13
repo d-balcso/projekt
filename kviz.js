@@ -165,13 +165,13 @@ function checkQuiz() {
     eredmenyElem.style.display = "block";
     eredmenyElem.style.opacity = "1";
     
-    eredmenyElem.innerText = "Pontszám: " + score + "/13";
-    document.getElementById("eredmeny").textContent = score;    
+    
+    document.getElementById("eredmeny").textContent = score + "/13";    
 
     if (score === 13) {
         setTimeout(() => {
     window.location.href = "absoluteOP.html";
-    }, 2000);
+    }, 7000);
     }
     //#endregion
 }
